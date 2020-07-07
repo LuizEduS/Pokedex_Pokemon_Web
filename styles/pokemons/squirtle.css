@@ -1,0 +1,19 @@
+.gridcontainerSquirtle{
+    background-color: #85C9DA;
+}
+
+.gridcontainerSquirtle .item1 .evol1{
+    background-image: url(/Assets/squirtle.png);
+    animation: move 4s infinite;
+}
+
+.gridcontainerSquirtle .item1 .evol2{
+    background-image: url(/Assets/008.png);
+    animation: move 10s infinite;
+}
+
+.gridcontainerSquirtle .item1 .evol3{
+    background-image: url(/Assets/009.png);
+    animation: move 14s infinite;
+}
+

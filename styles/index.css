@@ -1,0 +1,164 @@
+
+.imagem{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-top: 10%;
+    margin-left:auto;
+    margin-right:auto;
+    background-image: url(/Assets/Pokemon.png);
+    background-repeat: no-repeat;
+    height: 365px;
+    width: 990px;
+    transform: scale(0.7);
+    z-index: 110;
+    animation: logoanimation 4s infinite;
+    
+}
+
+.button {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-top: 26%;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+    width: 600px;
+    transform: scale(0.8);
+	background-color:transparent;
+	border:6px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:40px;
+	padding:12px 10px;
+    text-decoration:none;
+    
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 6px;
+
+    z-index: 110;
+}
+
+.button:hover{
+    background-color: rgba(0,0,0,0.3);
+    border-color: transparent;
+    animation: buttonanimation 0.6s forwards;
+    transition: all 0.6s linear;
+}
+
+
+.blueblock{
+    display: block;
+    position: absolute;
+    background-color: #2584C4;
+    height: 100%;
+    width: 50%;
+    float: left;
+    left: 0;
+    z-index: 101;
+}
+
+.redblock{
+    display: block;
+    position: absolute;
+    background-color: #CC212C;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    z-index: 101;
+}
+
+
+.whitemark{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    background-color: rgba(255,255,255,0.2);
+    height: 100%;
+    width: 740px;
+    z-index: 102;
+    ;
+}
+
+
+
+@keyframes faixafora{
+    0% {width: 740px;}
+    100% {width: 0px;}
+}
+
+@keyframes logoanimation{
+    0% {transform:scale(0.7);}
+    20% {transform:scale(0.6);}
+    40% {transform:scale(0.7);}
+    60% {transform:scale(0.6);}
+    100% {transform:scale(0.7);}    
+}
+
+@keyframes buttonanimation{
+    0% {transform:scale(0.9);}
+    60% {transform:scale(0.94);}
+    100% {transform:scale(0.9);}
+}
+
+@keyframes Blockanimation{
+    0% {width: 50%;}
+    100% {width: 1%;}
+}
+
+@keyframes BlockanimationFechar{
+    0% {width: 1%;}
+    100% {width: 50%;}
+}
+
+@keyframes buttonzero{
+    0%{
+        margin-top: 50px;
+    }
+    100%{
+        margin-top: 2000px;
+        background-color: rgba(0,0,0,0.3);
+        border-color: transparent;
+    }
+}
+
+@keyframes logosobe{
+    0% {
+        margin-top: 10%;
+    }
+    100% {
+        margin-top: -40%;
+    }  
+}
+
+@keyframes logodesce{
+    0% {
+        margin-top: -40%;
+    }
+    100% {
+        margin-top: 10%;
+    }  
+}
+
+@keyframes front{
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes back{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(0);
+    }
+}

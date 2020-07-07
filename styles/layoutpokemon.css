@@ -1,0 +1,226 @@
+#layout{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    'esquerda direitacima'
+    'esquerda direitabaixo';
+    grid-template-columns: 2fr 1fr;
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    grid-area: esquerda;
+}
+
+
+.item2{
+    grid-area: direitacima;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.item3{
+    grid-area: direitabaixo;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.pokeballbackground{
+    background-image: url(/Assets/Subtração2.png);
+    width: 60%;
+    height: 100%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: girar 20s infinite;
+}
+
+.item1 .evol1{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 6%;
+    margin-left:auto;
+    margin-right:auto;
+    z-index: 3;
+}
+
+.item1 .evol2{
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    opacity: 0.5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 12%;
+    margin-right:auto;
+    z-index: 2;
+}
+
+.item1 .evol3{
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    opacity: 0.5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -2%;
+    margin-left:-10%;
+    margin-right:auto;
+    z-index: 1;
+}
+
+.item1 a{
+    position: absolute;
+    text-align: center;
+
+    background-color:rgba(0,0,0,0.5);
+	color:#ffffff;
+    
+    border-radius: 20px;
+    
+	cursor:pointer;
+	font-size:54px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+    text-decoration:none;
+
+    padding:4px 20px;
+    margin-top: 18%;
+    
+}
+
+.item2 .title{
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item2 h1{
+    color: #ffffff;
+    font-family:Arial;
+	font-size:50px;
+    font-family: 'Bebas Neue', cursive;
+
+    text-decoration:none;
+
+}
+.colorblack{
+    color: black;
+}
+
+.text{
+    text-align: justify;
+    color: white;
+    margin: 0 52px 0 40px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial;
+    font-size:30px;
+    margin-bottom: 50px;
+}
+
+.item3{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    font-family: 'Bebas Neue', cursive;
+    font-size:30px;
+    color: #ffffff;
+}
+
+.lists{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.lists ul{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.lists ul li{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 160px;
+    padding: 6px 30px;
+}
+
+.water{
+    background-color: #7D75E5;
+}
+
+.grass{
+    background-color: #12CF4B;
+}
+
+.eletric{
+    background-color: #D2DE2C;
+}
+
+.fire{
+    background-color: #FF7700;
+}
+
+.ground{
+    background-color: #678E23;
+}
+
+.rock{
+    background-color: #642F18;
+}
+
+.poison{
+    background-color: #DB44FF;
+}
+
+.psychic{
+    background-color: #8A23FF;
+}
+
+.flying{
+    background-color: #88A0FF;
+}
+
+.ice{
+    background-color: #87C3FF;
+}
+
+
+@keyframes move{
+    0% {transform:scale(1);}
+    50% {transform:scale(0.9);}
+    100% {transform:scale(1);}
+}
+
+@keyframes girar{
+    0% {transform:rotate(0deg);}
+    50% {transform:rotate(180deg);}
+    100% {transform:rotate(360deg);}
+}

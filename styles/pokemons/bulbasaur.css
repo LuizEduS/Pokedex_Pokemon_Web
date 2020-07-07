@@ -1,0 +1,18 @@
+.gridcontainerBulbasaur{
+    background-color: #93D097;
+}
+.gridcontainerBulbasaur .item1 .evol1{
+    background-image: url(/Assets/ativo-5.png);
+    margin-left: 2%;
+    animation: move 4s infinite;
+}
+
+.gridcontainerBulbasaur .item1 .evol2{
+    background-image: url(/Assets/ivysaur.png);
+    animation: move 10s infinite;
+}
+
+.gridcontainerBulbasaur .item1 .evol3{
+    background-image: url(/Assets/venusaur.png);
+    animation: move 14s infinite;
+}
